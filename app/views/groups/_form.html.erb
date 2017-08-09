@@ -1,7 +1,9 @@
 <%= simple_form_for @group do |f| %>
   <div class="form-group col-md-12">
-    <%=f.input :title,iput_html: {class: "form-control"} %>
-    <%=f.input :description,input_html:{class: "form-control"}%>
+    <div class="row">
+      <%=f.input :title,input_html: {class: "form-control"} %>
+      <%=f.input :description,input_html:{class: "form-control"}%>
+    </div>
   </div>
   <%= f.submit "Submit",class: "btn btn-primary",data:{disable_with: "Submiting..."}%>
 <% end %>
